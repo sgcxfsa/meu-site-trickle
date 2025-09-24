@@ -1,0 +1,11 @@
+{
+  "name": "meu-site",
+  "version": "1.0.0",
+  "description": "Meu site feito no Trickle",
+  "scripts": {
+    "start": "npx serve -s"
+  },
+  "dependencies": {
+    "serve": "^14.0.0"
+  }
+}

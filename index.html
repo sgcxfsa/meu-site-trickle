@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>💰 HELP - Dinheiro Rápido em 2 Minutos | Até R$ 500mil Liberados</title>
+    <meta name="description" content="✅ Empréstimo aprovado em 2 minutos | ✅ Até R$ 500.000 | ✅ Taxa 0,99% | ✅ FGTS liberado no mesmo dia | 100% Digital e Seguro">
+    <meta name="keywords" content="empréstimo rápido, FGTS, dinheiro urgente, crédito fácil, aprovação instantânea, Help banco">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="💰 HELP - Dinheiro Rápido em 2 Minutos | Até R$ 500mil">
+    <meta property="og:description" content="✅ Aprovação em 2 minutos ✅ Até R$ 500.000 ✅ Taxa 0,99% ✅ FGTS no mesmo dia">
+    
+    <!-- Twitter -->
+    <meta name="twitter:title" content="💰 HELP - Dinheiro Rápido em 2 Minutos | Até R$ 500mil">
+    <meta name="twitter:description" content="✅ Aprovação em 2 minutos ✅ Até R$ 500.000 ✅ Taxa 0,99% ✅ FGTS no mesmo dia">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #ea580c;
+            --secondary-color: #fff7ed;
+            --accent-color: #059669;
+            --logo-color: #ea580c;
+            --logo-bg: linear-gradient(135deg, #ea580c, #fb923c);
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-color: #fed7aa;
+            --shadow-soft: 0 4px 6px -1px rgba(234, 88, 12, 0.15);
+            --shadow-medium: 0 10px 15px -3px rgba(234, 88, 12, 0.2);
+            --gradient-primary: linear-gradient(135deg, #ea580c, #fb923c);
+            --gradient-success: linear-gradient(135deg, #059669, #10b981);
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+        }
+        
+        h1, h2, h3 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white px-8 py-4 rounded-2xl font-bold hover:bg-blue-700 transition-colors duration-200 text-lg min-h-[56px];
+        }
+        
+        .btn-secondary {
+            @apply bg-transparent text-[var(--primary-color)] border-2 border-[var(--primary-color)] px-8 py-4 rounded-2xl font-bold hover:bg-[var(--primary-color)] hover:text-white transition-all duration-200 text-lg min-h-[56px];
+        }
+        
+        .card {
+            @apply bg-white rounded-2xl shadow-[var(--shadow-soft)] border border-[var(--border-color)] p-6;
+        }
+        
+        .section-padding {
+            @apply px-6 py-12 max-w-7xl mx-auto;
+        }
+        
+        .mobile-input {
+            @apply w-full px-6 py-4 border-2 border-[var(--border-color)] rounded-2xl focus:outline-none focus:border-[var(--primary-color)] focus:ring-4 focus:ring-blue-100 transition-all duration-200 bg-white text-[var(--text-primary)] placeholder-gray-400 text-lg min-h-[56px];
+        }
+        
+        .mobile-button {
+            @apply w-full py-5 rounded-2xl font-bold text-xl min-h-[64px] transition-all duration-200 shadow-lg;
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Services.js"></script>
+    <script type="text/babel" src="components/Benefits.js"></script>
+    <script type="text/babel" src="components/Testimonials.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="utils/cpfValidator.js"></script>
+    <script type="text/babel" src="components/ConsultaModal.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
